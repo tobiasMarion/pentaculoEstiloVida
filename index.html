@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/svgInject.min.js"></script>
 </head>
 
 <body>
@@ -320,13 +321,17 @@
               <label for="o2">2</label>
 
               <input type="radio" name="o" id="o3" value="3">
-              <label for="l3">3</label>
+              <label for="o3">3</label>
             </div>
           </div>
         </fieldset>
 
         <button>Enviar</button>
       </form>
+
+      <div class="result hidden">
+        <img src="./assets/star.svg" alt="Pentáculo do Estilo de Vida" onload="SVGInject(this)">
+      </div>
     </main>
 
     <footer>
@@ -344,6 +349,8 @@
       </a>
     </footer>
   </div>
+
+  <script src="./scripts/paintStar.js"></script>
 </body>
 
 </html>

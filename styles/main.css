@@ -29,6 +29,8 @@
   --slate-800: #1E293B;
   --slate-900: #0F172A;
   --slate-950: #020617;
+
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1080px) {
@@ -110,7 +112,7 @@ main {
   padding-bottom: 8rem;
 }
 
-form {
+form, .result {
   margin: 0 auto;
   padding: 2rem;
   background: var(--slate-50);
@@ -118,6 +120,10 @@ form {
   border-radius: 1.25rem;
   max-width: 720px;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.hidden {
+  display: none;
 }
 
 form h2 {
@@ -253,4 +259,8 @@ footer.tag a {
   margin: 0 auto;
   text-decoration: none;
   color: var(--violet-500);
+}
+
+path {
+  transition: 300ms ease-in-out;
 }
