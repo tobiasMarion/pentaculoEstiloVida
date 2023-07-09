@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --violet-50: #F5F3FF;
+  --violet-100: #EDE9FE;
+  --violet-200: #C4B5FD;
+  --violet-300: #C4B5FD;
+  --violet-400: #A78BFA;
+  --violet-500: #8B5CF6;
+  --violet-600: #7C3AED;
+  --violet-700: #6D28D9;
+  --violet-800: #5B21B6;
+  --violet-900: #4C1D95;
+  --violet-950: #2E1065;
+
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-400: #94A3B8;
+  --slate-500: #64748B;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1E293B;
+  --slate-900: #0F172A;
+  --slate-950: #020617;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--slate-500);
+  margin-bottom: .5rem;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--violet-50);
+  height: min-content;
+}
+
+.container>header {
+  padding: 2rem 1rem 8rem;
+  background: var(--violet-500);
+  color: var(--slate-50);
+  border-radius: 0 0 1.25rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+header .content {
+  width: 100%;
+  max-width: 720px;
+}
+
+header .content nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--slate-300);
+  margin-bottom: 4rem;
+}
+
+.iffar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .content nav>span {
+  font-size: 0.75rem;
+  text-align: end;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+header h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: var(--slate-50);
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  color: var(--slate-100);
+}
+
+main {
+  margin: -6rem 1rem 0;
+  padding-bottom: 8rem;
+}
+
+form {
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--slate-50);
+  border: 1px var(--slate-300) solid;
+  border-radius: 1.25rem;
+  max-width: 720px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+form h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color: var(--slate-600);
+}
+
+form ol {
+  margin-left: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--slate-500);
+}
+
+form ol li {
+  margin-bottom: 0.25rem;
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid var(--slate-200);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+fieldset:last-child {
+  border-bottom: 1px solid var(--slate-200);
+}
+
+fieldset h3 {
+  color: var(--slate-600);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.input-group {
+  margin: 1rem 0 2rem;
+}
+
+.input-group .question-letter {
+  font-size: 0.75rem;
+  color: var(--slate-400);
+}
+
+.alternatives {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--slate-400);
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: var(--slate-500);
+  transition: 0.2s ease-in-out;
+}
+
+input[type="radio"]:checked+label {
+  color: var(--slate-50);
+  background: var(--violet-500);
+  border-color: var(--violet-600);
+}
+
+form button {
+  transition: 0.2s;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--slate-50);
+  background: var(--violet-500);
+  border: 1px solid var(--violet-600);
+  border-radius: .75rem;
+  cursor: pointer;
+}
+
+button:hover,
+input:checked+label:hover {
+  filter: brightness(0.95);
+}
+
+label:hover {
+  background: var(--violet-100);
+}
+
+.container>footer {
+  background: var(--violet-500);
+  padding: 3rem 1rem;
+}
+
+footer .content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+footer .content h2 {
+  color: var(--slate-100);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .content p {
+  color: var(--slate-200);
+}
+
+footer.tag {
+  font-size: .75rem;
+  padding: .5rem 0;
+  margin: 0;
+  background: var(--slate-50);
+}
+
+footer.tag a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: max-content;
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--violet-500);
+}
