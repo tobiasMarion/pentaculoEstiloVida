@@ -122,6 +122,10 @@ form, .result {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.04);
 }
 
+.result {
+  padding: 1rem;
+}
+
 .hidden {
   display: none;
 }
@@ -259,6 +263,10 @@ footer.tag a {
   margin: 0 auto;
   text-decoration: none;
   color: var(--violet-500);
+}
+
+#star {
+  width: 100%;
 }
 
 path {
