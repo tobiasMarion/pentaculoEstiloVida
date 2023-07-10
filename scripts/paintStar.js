@@ -17,11 +17,10 @@ form.addEventListener('submit', async event => {
     const value = document.querySelector(`input[name="${letter}"]:checked`).value
     for (let i = 1; i <= value; i++) {
       const shape = document.querySelector(`.${letter} .l${i}`)
-      console.log(shape)
       shape.style.fillOpacity = 100
-      await sleep(50)
+      await sleep(25)
     }
 
-    await sleep(100)
+    if (value > 0) await sleep(50)
   }
 })

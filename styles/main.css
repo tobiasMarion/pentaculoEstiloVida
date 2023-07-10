@@ -112,7 +112,8 @@ main {
   padding-bottom: 8rem;
 }
 
-form, .result {
+form,
+.result {
   margin: 0 auto;
   padding: 2rem;
   background: var(--slate-50);
@@ -130,7 +131,7 @@ form, .result {
   display: none;
 }
 
-form h2 {
+main h2 {
   font-size: 1.75rem;
   line-height: 2rem;
   margin-bottom: 1rem;
@@ -265,10 +266,46 @@ footer.tag a {
   color: var(--violet-500);
 }
 
+.result {
+  padding: 2rem 1rem;
+}
+
+.result h2 {
+  text-align: center;
+}
+
+.result p {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #star {
+  margin-top: 3rem;
   width: 100%;
+  height: auto;
 }
 
 path {
   transition: 300ms ease-in-out;
+}
+
+
+.result a {
+  display: block;
+  font-size: 1.25rem;
+  color: var(--violet-600);
+  border: 2px solid var(--violet-500);
+  border-radius: .5rem;
+  text-align: center;
+  padding: .75rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  background: var(--violet-50);
+  transition: 100ms ease-in-out;
+}
+
+.result a:hover {
+  background: var(--violet-100);
 }
