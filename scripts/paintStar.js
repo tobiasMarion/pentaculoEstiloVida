@@ -50,5 +50,4 @@ form.addEventListener('submit', async event => {
   }
 
   event.target.submit()
-
 })
